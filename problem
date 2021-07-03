@@ -12,6 +12,13 @@ get_number_from_string(s)
 GetNumberFromString(string s)
 */
 
-function getNumberFromString(s) {
-  return 0;
+const getNumberFromString = (s) => {
+  let newS = (s.split(' ')).join('');
+  let str = '';
+  for(let i = 0; i < newS.length; i++) {
+    if(Number(newS[i]) * 0 === 0) {
+      str += newS[i];
+    }
+  }
+  return Number(str);
 }
